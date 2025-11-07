@@ -144,9 +144,6 @@ setInterval(cleanupInactiveUsers, 30 * 60 * 1000);
 io.on('connection', (socket) => {
   log.info('New socket connection:', { socketId: socket.id, ip: socket.handshake.address });
 
-  // Set socket timeout
-  socket.setTimeout(300000); // 5 minutes
-
   // Handle user authentication/connection
   socket.on('authenticate', (data) => {
     try {
