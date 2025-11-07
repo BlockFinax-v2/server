@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.* 
+!.env.example
+.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / output
+dist/
+build/
+.out/
+.next/
+.cache/
+public/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Runtime / temp
+tmp/
+temp/
+*.tmp
+pids/
+*.pid
+*.pid.lock
+
+# Serverless / process managers
+.serverless/
+pm2.pid
+pm2.log
+
+# Docker overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Misc
+*.local
